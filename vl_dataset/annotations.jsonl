@@ -1,0 +1,909 @@
+{"image": "images/0.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/1.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/2.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/3.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/4.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/5.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/6.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/7.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/8.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/9.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/10.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/11.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/12.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/13.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/14.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/15.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/16.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/17.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/18.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/19.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/20.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/21.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/22.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/23.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/24.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/25.png", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"image": "images/26.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/27.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/28.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/29.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/30.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/31.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/32.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/33.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/34.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/35.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/36.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/37.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/38.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/39.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/40.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/41.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/42.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/43.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/44.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/45.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/46.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/47.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/48.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/49.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/50.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/51.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/52.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/53.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/54.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/55.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/56.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/57.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/58.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/59.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/60.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/61.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/62.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/63.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/64.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/65.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/66.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/67.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/68.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/69.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/70.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/71.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/72.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/73.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/74.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/75.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/76.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/77.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/78.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/79.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/80.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/81.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/82.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/83.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/84.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/85.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/86.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/87.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/88.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/89.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/90.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/91.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/92.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/93.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/94.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/95.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/96.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/97.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/98.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/99.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/100.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/101.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/102.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/103.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/104.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/105.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/106.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/107.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/108.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/109.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/110.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/111.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/112.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/113.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/114.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/115.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/116.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/117.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/118.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/119.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/120.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/121.png", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"image": "images/122.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/123.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/124.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/125.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/126.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/127.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/128.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/129.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/130.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/131.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/132.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/133.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/134.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/135.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/136.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/137.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/138.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/139.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/140.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/141.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/142.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/143.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/144.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/145.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/146.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/147.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/148.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/149.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/150.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/151.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/152.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/153.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/154.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/155.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/156.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/157.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/158.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/159.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/160.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/161.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/162.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/163.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/164.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/165.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/166.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/167.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/168.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/169.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/170.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/171.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/172.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/173.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/174.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/175.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/176.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/177.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/178.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/179.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/180.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/181.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/182.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/183.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/184.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/185.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/186.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/187.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/188.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/189.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/190.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/191.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/192.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/193.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/194.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/195.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/196.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/197.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/198.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/199.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/200.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/201.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/202.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/203.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/204.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/205.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/206.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/207.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/208.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/209.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/210.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/211.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/212.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/213.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/214.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/215.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/216.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/217.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/218.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/219.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/220.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/221.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/222.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/223.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/224.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/225.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/226.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/227.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/228.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/229.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/230.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/231.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/232.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/233.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/234.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/235.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/236.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/237.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/238.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/239.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/240.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/241.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/242.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/243.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/244.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/245.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/246.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/247.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/248.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/249.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/250.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/251.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/252.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/253.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/254.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/255.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/256.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/257.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/258.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/259.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/260.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/261.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/262.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/263.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/264.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/265.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/266.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/267.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/268.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/269.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/270.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/271.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/272.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/273.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/274.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/275.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/276.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/277.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/278.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/279.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/280.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/281.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/282.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/283.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/284.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/285.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/286.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/287.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/288.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/289.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/290.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/291.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/292.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/293.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/294.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/295.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/296.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/297.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/298.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/299.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/300.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/301.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/302.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/303.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/304.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/305.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/306.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/307.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/308.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/309.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/310.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/311.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/312.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/313.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/314.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/315.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/316.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/317.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/318.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/319.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/320.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/321.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/322.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/323.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/324.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/325.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/326.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/327.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/328.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/329.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/330.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/331.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/332.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/333.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/334.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/335.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/336.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/337.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/338.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/339.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/340.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/341.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/342.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/343.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/344.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/345.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/346.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/347.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/348.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/349.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/350.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/351.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/352.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/353.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/354.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/355.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/356.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/357.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/358.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/359.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/360.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/361.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/362.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/363.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/364.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/365.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/366.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/367.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/368.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/369.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/370.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/371.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/372.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/373.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/374.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/375.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/376.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/377.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/378.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/379.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/380.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/381.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/382.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/383.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/384.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/385.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/386.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/387.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/388.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/389.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/390.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/391.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/392.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/393.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/394.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/395.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/396.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/397.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/398.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/399.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/400.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/401.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/402.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/403.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/404.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/405.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/406.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/407.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/408.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/409.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/410.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/411.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/412.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/413.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/414.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/415.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/416.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/417.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/418.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/419.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/420.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/421.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/422.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/423.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/424.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/425.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/426.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/427.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/428.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/429.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/430.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/431.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/432.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/433.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/434.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/435.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/436.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/437.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/438.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/439.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/440.png", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"image": "images/441.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/442.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/443.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/444.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/445.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/446.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/447.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/448.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/449.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/450.png", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"image": "images/451.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/452.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/453.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/454.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/455.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/456.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/457.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/458.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/459.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/460.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/461.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/462.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/463.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/464.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/465.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/466.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/467.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/468.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/469.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/470.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/471.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/472.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/473.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/474.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/475.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/476.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/477.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/478.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/479.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/480.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/481.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/482.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/483.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/484.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/485.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/486.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/487.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/488.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/489.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/490.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/491.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/492.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/493.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/494.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/495.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/496.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/497.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/498.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/499.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/500.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/501.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/502.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/503.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/504.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/505.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/506.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/507.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/508.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/509.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/510.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/511.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/512.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/513.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/514.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/515.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/516.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/517.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/518.png", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"image": "images/519.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/520.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/521.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/522.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/523.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/524.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/525.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/526.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/527.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/528.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/529.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/530.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/531.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/532.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/533.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/534.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/535.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/536.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/537.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/538.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/539.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/540.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/541.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/542.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/543.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/544.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/545.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/546.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/547.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/548.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/549.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/550.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/551.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/552.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/553.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/554.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/555.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/556.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/557.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/558.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/559.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/560.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/561.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/562.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/563.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/564.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/565.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/566.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/567.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/568.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/569.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/570.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/571.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/572.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/573.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/574.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/575.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/576.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/577.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/578.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/579.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/580.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/581.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/582.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/583.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/584.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/585.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/586.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/587.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/588.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/589.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/590.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/591.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/592.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/593.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/594.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/595.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/596.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/597.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/598.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/599.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/600.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/601.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/602.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/603.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/604.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/605.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/606.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/607.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/608.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/609.png", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"image": "images/610.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/611.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/612.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/613.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/614.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/615.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/616.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/617.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/618.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/619.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/620.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/621.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/622.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/623.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/624.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/625.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/626.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/627.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/628.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/629.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/630.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/631.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/632.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/633.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/634.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/635.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/636.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/637.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/638.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/639.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/640.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/641.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/642.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/643.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/644.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/645.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/646.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/647.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/648.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/649.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/650.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/651.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/652.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/653.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/654.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/655.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/656.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/657.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/658.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/659.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/660.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/661.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/662.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/663.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/664.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/665.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/666.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/667.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/668.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/669.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/670.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/671.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/672.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/673.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/674.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/675.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/676.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/677.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/678.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/679.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/680.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/681.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/682.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/683.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/684.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/685.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/686.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/687.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/688.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/689.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/690.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/691.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/692.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/693.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/694.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/695.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/696.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/697.png", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"image": "images/698.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/699.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/700.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/701.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/702.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/703.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/704.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/705.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/706.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/707.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/708.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/709.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/710.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/711.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/712.png", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"image": "images/713.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/714.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/715.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/716.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/717.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/718.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/719.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/720.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/721.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/722.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/723.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/724.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/725.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/726.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/727.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/728.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/729.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/730.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/731.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/732.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/733.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/734.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/735.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/736.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/737.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/738.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/739.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/740.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/741.png", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"image": "images/742.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/743.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/744.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/745.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/746.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/747.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/748.png", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"image": "images/749.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/750.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/751.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/752.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/753.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/754.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/755.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/756.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/757.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/758.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/759.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/760.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/761.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/762.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/763.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/764.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/765.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/766.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/767.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/768.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/769.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/770.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/771.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/772.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/773.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/774.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/775.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/776.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/777.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/778.png", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"image": "images/779.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/780.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/781.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/782.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/783.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/784.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/785.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/786.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/787.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/788.png", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"image": "images/789.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/790.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/791.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/792.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/793.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/794.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/795.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/796.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/797.png", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"image": "images/798.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/799.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/800.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/801.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/802.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/803.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/804.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/805.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/806.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/807.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/808.png", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"image": "images/809.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/810.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/811.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/812.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/813.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/814.png", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"image": "images/815.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/816.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/817.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/818.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/819.png", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"image": "images/820.png", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"image": "images/821.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/822.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/823.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/824.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/825.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/826.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/827.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/828.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/829.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/830.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/831.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/832.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/833.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/834.png", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"image": "images/835.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/836.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/837.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/838.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/839.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/840.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/841.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/842.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/843.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/844.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/845.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/846.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/847.png", "text": "The equations describe conservation of mass through the continuity equation."}
+{"image": "images/848.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/849.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/850.png", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"image": "images/851.png", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"image": "images/852.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/853.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/854.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/855.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/856.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/857.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"image": "images/858.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/859.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/860.png", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"image": "images/861.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/862.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/863.png", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"image": "images/864.png", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"image": "images/865.png", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"image": "images/866.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/867.png", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"image": "images/868.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/869.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/870.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/871.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/872.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/873.png", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"image": "images/874.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/875.png", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"image": "images/876.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/877.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/878.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/879.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/880.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/881.png", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"image": "images/882.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/883.png", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"image": "images/884.png", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"image": "images/885.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/886.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/887.png", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"image": "images/888.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/889.png", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"image": "images/890.png", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"image": "images/891.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/892.png", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"image": "images/893.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/894.png", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"image": "images/895.png", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"image": "images/896.png", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"image": "images/897.png", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"image": "images/898.png", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"image": "images/899.png", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"image": "images/900.png", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"image": "images/901.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/902.png", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"image": "images/903.png", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"image": "images/904.png", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"image": "images/905.png", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"image": "images/906.png", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"image": "images/907.png", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"image": "images/908.png", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
