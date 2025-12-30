@@ -1,0 +1,909 @@
+{"tensor": "tensors_test/0.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/1.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/2.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/3.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/4.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/5.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/6.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/7.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/8.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/9.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/10.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/11.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/12.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/13.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/14.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/15.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/16.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/17.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/18.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/19.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/20.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/21.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/22.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/23.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/24.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/25.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/26.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/27.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/28.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/29.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/30.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/31.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/32.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/33.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/34.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/35.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/36.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/37.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/38.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/39.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/40.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/41.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/42.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/43.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/44.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/45.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/46.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/47.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/48.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/49.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/50.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/51.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/52.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/53.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/54.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/55.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/56.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/57.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/58.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/59.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/60.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/61.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/62.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/63.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/64.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/65.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/66.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/67.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/68.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/69.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/70.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/71.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/72.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/73.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/74.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/75.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/76.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/77.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/78.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/79.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/80.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/81.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/82.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/83.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/84.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/85.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/86.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/87.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/88.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/89.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/90.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/91.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/92.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/93.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/94.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/95.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/96.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/97.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/98.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/99.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/100.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/101.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/102.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/103.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/104.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/105.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/106.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/107.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/108.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/109.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/110.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/111.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/112.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/113.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/114.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/115.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/116.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/117.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/118.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/119.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/120.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/121.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/122.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/123.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/124.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/125.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/126.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/127.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/128.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/129.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/130.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/131.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/132.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/133.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/134.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/135.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/136.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/137.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/138.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/139.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/140.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/141.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/142.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/143.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/144.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/145.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/146.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/147.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/148.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/149.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/150.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/151.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/152.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/153.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/154.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/155.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/156.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/157.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/158.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/159.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/160.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/161.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/162.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/163.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/164.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/165.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/166.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/167.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/168.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/169.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/170.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/171.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/172.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/173.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/174.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/175.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/176.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/177.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/178.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/179.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/180.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/181.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/182.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/183.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/184.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/185.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/186.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/187.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/188.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/189.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/190.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/191.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/192.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/193.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/194.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/195.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/196.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/197.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/198.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/199.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/200.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/201.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/202.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/203.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/204.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/205.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/206.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/207.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/208.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/209.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/210.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/211.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/212.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/213.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/214.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/215.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/216.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/217.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/218.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/219.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/220.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/221.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/222.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/223.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/224.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/225.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/226.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/227.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/228.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/229.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/230.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/231.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/232.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/233.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/234.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/235.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/236.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/237.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/238.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/239.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/240.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/241.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/242.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/243.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/244.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/245.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/246.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/247.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/248.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/249.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/250.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/251.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/252.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/253.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/254.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/255.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/256.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/257.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/258.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/259.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/260.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/261.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/262.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/263.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/264.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/265.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/266.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/267.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/268.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/269.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/270.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/271.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/272.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/273.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/274.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/275.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/276.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/277.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/278.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/279.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/280.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/281.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/282.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/283.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/284.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/285.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/286.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/287.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/288.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/289.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/290.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/291.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/292.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/293.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/294.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/295.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/296.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/297.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/298.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/299.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/300.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/301.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/302.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/303.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/304.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/305.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/306.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/307.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/308.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/309.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/310.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/311.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/312.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/313.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/314.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/315.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/316.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/317.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/318.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/319.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/320.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/321.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/322.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/323.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/324.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/325.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/326.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/327.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/328.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/329.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/330.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/331.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/332.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/333.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/334.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/335.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/336.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/337.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/338.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/339.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/340.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/341.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/342.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/343.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/344.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/345.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/346.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/347.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/348.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/349.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/350.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/351.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/352.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/353.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/354.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/355.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/356.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/357.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/358.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/359.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/360.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/361.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/362.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/363.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/364.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/365.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/366.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/367.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/368.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/369.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/370.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/371.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/372.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/373.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/374.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/375.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/376.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/377.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/378.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/379.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/380.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/381.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/382.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/383.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/384.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/385.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/386.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/387.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/388.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/389.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/390.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/391.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/392.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/393.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/394.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/395.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/396.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/397.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/398.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/399.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/400.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/401.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/402.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/403.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/404.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/405.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/406.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/407.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/408.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/409.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/410.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/411.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/412.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/413.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/414.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/415.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/416.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/417.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/418.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/419.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/420.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/421.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/422.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/423.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/424.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/425.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/426.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/427.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/428.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/429.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/430.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/431.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/432.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/433.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/434.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/435.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/436.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/437.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/438.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/439.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/440.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/441.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/442.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/443.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/444.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/445.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/446.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/447.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/448.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/449.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/450.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/451.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/452.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/453.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/454.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/455.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/456.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/457.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/458.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/459.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/460.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/461.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/462.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/463.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/464.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/465.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/466.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/467.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/468.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/469.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/470.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/471.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/472.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/473.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/474.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/475.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/476.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/477.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/478.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/479.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/480.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/481.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/482.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/483.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/484.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/485.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/486.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/487.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/488.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/489.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/490.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/491.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/492.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/493.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/494.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/495.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/496.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/497.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/498.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/499.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/500.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/501.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/502.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/503.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/504.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/505.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/506.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/507.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/508.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/509.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/510.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/511.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/512.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/513.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/514.npy", "text": "The PDEs represent how pressure gradients drive acceleration in the turbulent flow."}
+{"tensor": "tensors_test/515.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/516.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/517.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/518.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/519.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/520.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/521.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/522.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/523.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/524.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/525.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/526.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/527.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/528.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/529.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/530.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/531.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/532.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/533.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/534.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/535.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/536.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/537.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/538.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/539.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/540.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/541.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/542.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/543.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/544.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/545.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/546.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/547.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/548.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/549.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/550.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/551.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/552.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/553.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/554.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/555.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/556.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/557.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/558.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/559.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/560.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/561.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/562.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/563.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/564.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/565.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/566.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/567.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/568.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/569.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/570.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/571.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/572.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/573.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/574.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/575.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/576.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/577.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/578.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/579.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/580.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/581.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/582.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/583.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/584.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/585.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/586.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/587.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/588.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/589.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/590.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/591.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/592.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/593.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/594.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/595.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/596.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/597.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/598.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/599.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/600.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/601.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/602.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/603.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/604.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/605.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/606.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/607.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/608.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/609.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/610.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/611.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/612.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/613.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/614.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/615.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/616.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/617.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/618.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/619.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/620.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/621.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/622.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/623.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/624.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/625.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/626.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/627.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/628.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/629.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/630.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/631.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/632.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/633.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/634.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/635.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/636.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/637.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/638.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/639.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/640.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/641.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/642.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/643.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/644.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/645.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/646.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/647.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/648.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/649.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/650.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/651.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/652.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/653.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/654.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/655.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/656.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/657.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/658.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/659.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/660.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/661.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/662.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/663.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/664.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/665.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/666.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/667.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/668.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/669.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/670.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/671.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/672.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/673.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/674.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/675.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/676.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/677.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/678.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/679.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/680.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/681.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/682.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/683.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/684.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/685.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/686.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/687.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/688.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/689.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/690.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/691.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/692.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/693.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/694.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/695.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/696.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/697.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/698.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/699.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/700.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/701.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/702.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/703.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/704.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/705.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/706.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/707.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/708.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/709.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/710.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/711.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/712.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/713.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/714.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/715.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/716.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/717.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/718.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/719.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/720.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/721.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/722.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/723.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/724.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/725.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/726.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/727.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/728.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/729.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/730.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/731.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/732.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/733.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/734.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/735.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/736.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/737.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/738.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/739.npy", "text": "The system describes how radiative cooling removes energy from the turbulent layer."}
+{"tensor": "tensors_test/740.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/741.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/742.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/743.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/744.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/745.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/746.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/747.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/748.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/749.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/750.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/751.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/752.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/753.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/754.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/755.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/756.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/757.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/758.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/759.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/760.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/761.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/762.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/763.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/764.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/765.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/766.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/767.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/768.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/769.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/770.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/771.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/772.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/773.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/774.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/775.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/776.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/777.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/778.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/779.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/780.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/781.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/782.npy", "text": "The PDEs represent energy evolution influenced by advection and cooling simultaneously."}
+{"tensor": "tensors_test/783.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/784.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/785.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/786.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/787.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/788.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/789.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/790.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/791.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/792.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/793.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/794.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/795.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/796.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/797.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/798.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/799.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/800.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/801.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/802.npy", "text": "The PDEs represent nonlinear advection of momentum and energy in a compressible layer."}
+{"tensor": "tensors_test/803.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/804.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/805.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/806.npy", "text": "The system models energy redistribution due to fluid motion and compressional work."}
+{"tensor": "tensors_test/807.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/808.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/809.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/810.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/811.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/812.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/813.npy", "text": "This model represents the evolution of total energy under pressure work and cooling."}
+{"tensor": "tensors_test/814.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/815.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/816.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/817.npy", "text": "The equations model the effect of compressibility on 2D velocity and density fields."}
+{"tensor": "tensors_test/818.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/819.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/820.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/821.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/822.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/823.npy", "text": "This model captures radiative energy loss proportional to the total energy over the cooling time."}
+{"tensor": "tensors_test/824.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/825.npy", "text": "The PDEs describe how compressibility modifies energy transport in 2D turbulence."}
+{"tensor": "tensors_test/826.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/827.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/828.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/829.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/830.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/831.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/832.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/833.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/834.npy", "text": "The equations model turbulent energy redistribution in a compressible 2D medium."}
+{"tensor": "tensors_test/835.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/836.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/837.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/838.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/839.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/840.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/841.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/842.npy", "text": "This model describes energy dissipation in a turbulent layer through radiative losses."}
+{"tensor": "tensors_test/843.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/844.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/845.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/846.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/847.npy", "text": "The system captures energy evolution under advection and radiative cooling."}
+{"tensor": "tensors_test/848.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/849.npy", "text": "The equations capture the balance between pressure acceleration and radiative energy loss."}
+{"tensor": "tensors_test/850.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/851.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/852.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/853.npy", "text": "The system describes turbulence where the adiabatic index \u03b3 governs the pressure\u2013energy relationship."}
+{"tensor": "tensors_test/854.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/855.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/856.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/857.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/858.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/859.npy", "text": "The system captures compressible turbulent motions in a 2D radiative medium."}
+{"tensor": "tensors_test/860.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/861.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/862.npy", "text": "The equations model pressure-driven acceleration in a radiatively cooling turbulent layer."}
+{"tensor": "tensors_test/863.npy", "text": "This model describes the advection of momentum by the velocity field itself."}
+{"tensor": "tensors_test/864.npy", "text": "The system represents compressible hydrodynamics with pressure forces and radiative damping in a 2D layer."}
+{"tensor": "tensors_test/865.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/866.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/867.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/868.npy", "text": "The equations model 2D flow structures shaped by nonlinear advection and pressure forces."}
+{"tensor": "tensors_test/869.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/870.npy", "text": "The PDEs represent the effect of velocity divergence on density evolution."}
+{"tensor": "tensors_test/871.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/872.npy", "text": "The PDEs describe how velocity gradients influence momentum transport."}
+{"tensor": "tensors_test/873.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/874.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/875.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/876.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/877.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/878.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/879.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/880.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/881.npy", "text": "This model describes 2D compressible turbulence in a layer with fixed \u03b3 = 5/3."}
+{"tensor": "tensors_test/882.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/883.npy", "text": "The equations describe how density fluctuations are transported by the velocity field."}
+{"tensor": "tensors_test/884.npy", "text": "This model describes velocity evolution in a compressible medium with pressure forces."}
+{"tensor": "tensors_test/885.npy", "text": "The equations describe conservation of mass through the continuity equation."}
+{"tensor": "tensors_test/886.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/887.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/888.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/889.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/890.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/891.npy", "text": "This PDE set represents momentum evolution influenced by pressure gradients in two dimensions."}
+{"tensor": "tensors_test/892.npy", "text": "The PDEs represent total energy as the sum of internal energy and kinetic energy."}
+{"tensor": "tensors_test/893.npy", "text": "This model captures how density and velocity fluctuations interact with radiative cooling."}
+{"tensor": "tensors_test/894.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
+{"tensor": "tensors_test/895.npy", "text": "The equations model 2D turbulent flow where energy decreases over a characteristic cooling time."}
+{"tensor": "tensors_test/896.npy", "text": "This system models 2D compressible turbulence in a radiatively cooling layer."}
+{"tensor": "tensors_test/897.npy", "text": "The system represents total energy evolution including internal, kinetic, and cooling contributions."}
+{"tensor": "tensors_test/898.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/899.npy", "text": "The PDEs describe how pressure evolves from density and internal energy."}
+{"tensor": "tensors_test/900.npy", "text": "This model captures interactions between kinetic energy, pressure, and radiative cooling."}
+{"tensor": "tensors_test/901.npy", "text": "The equations capture the coupling between density, velocity, and pressure in a 2D layer."}
+{"tensor": "tensors_test/902.npy", "text": "The system represents compressible turbulence damped by radiative cooling."}
+{"tensor": "tensors_test/903.npy", "text": "This model describes how cooling time determines the rate of energy loss."}
+{"tensor": "tensors_test/904.npy", "text": "The system models turbulent flow where cooling reduces internal energy over time."}
+{"tensor": "tensors_test/905.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/906.npy", "text": "The system describes momentum advection coupled to pressure gradients in a radiatively active layer."}
+{"tensor": "tensors_test/907.npy", "text": "The PDEs capture 2D turbulent motions where velocity advects both momentum and energy."}
+{"tensor": "tensors_test/908.npy", "text": "The equations describe how radiative cooling affects the dynamics of both momentum and energy."}
