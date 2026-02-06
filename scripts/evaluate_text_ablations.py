@@ -211,7 +211,7 @@ def main():
     )
 
     dataset = PDETensorTextDataset(
-        "/Users/divyam/Course/Project Arbeit/pde_solver/src/vl_dataset/annotations_test.jsonl"
+        "/Users/divyam/Course/Project Arbeit/pde_solver/src/dataset/annotations_test.jsonl"
     )
 
     model = TextConditionedUNet1D(in_channels=5, out_channels=1).to(device)

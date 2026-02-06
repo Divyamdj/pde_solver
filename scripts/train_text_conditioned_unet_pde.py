@@ -294,10 +294,10 @@ def save_model(model, path, metadata):
 # =========================
 def main():
     train_base = PDETensorTextDataset(
-        "/Users/divyam/Course/Project Arbeit/pde_solver/src/vl_dataset/annotations.jsonl"
+        "/Users/divyam/Course/Project Arbeit/pde_solver/src/dataset/annotations.jsonl"
     )
     test_base = PDETensorTextDataset(
-        "/Users/divyam/Course/Project Arbeit/pde_solver/src/vl_dataset/annotations_test.jsonl"
+        "/Users/divyam/Course/Project Arbeit/pde_solver/src/dataset/annotations_test.jsonl"
     )
 
     train_dataset = NextStepPDEDataset(train_base, input_steps=input_steps)
