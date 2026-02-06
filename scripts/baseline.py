@@ -231,11 +231,11 @@ def evaluate_rollout(model, dataloader, rollout_steps, device):
 def main():
     # ---- Dataset paths ----
     base_dataset = PDETensorTextDataset(
-        "/Users/divyam/Course/Project Arbeit/pde_solver/vl_dataset/annotations.jsonl"
+        "/Users/divyam/Course/Project Arbeit/pde_solver/src/vl_dataset/annotations.jsonl"
     )
 
     test_base_dataset = PDETensorTextDataset(
-        "/Users/divyam/Course/Project Arbeit/pde_solver/vl_dataset/annotations_test.jsonl"
+        "/Users/divyam/Course/Project Arbeit/pde_solver/src/vl_dataset/annotations_test.jsonl"
     )
 
     # ---- Hyperparameters ----

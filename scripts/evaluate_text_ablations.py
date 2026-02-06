@@ -211,12 +211,12 @@ def main():
     )
 
     dataset = PDETensorTextDataset(
-        "/Users/divyam/Course/Project Arbeit/pde_solver/vl_dataset/annotations_test.jsonl"
+        "/Users/divyam/Course/Project Arbeit/pde_solver/src/vl_dataset/annotations_test.jsonl"
     )
 
     model = TextConditionedUNet1D(in_channels=5, out_channels=1).to(device)
     ckpt = torch.load(
-    "/Users/divyam/Course/Project Arbeit/pde_solver/checkpoints/text_conditioned_unet.pt",
+    "/Users/divyam/Course/Project Arbeit/pde_solver/scripts/checkpoints/text_conditioned_unet.pt",
     map_location=device
     )
 
