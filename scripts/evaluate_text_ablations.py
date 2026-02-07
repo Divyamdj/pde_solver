@@ -14,14 +14,14 @@ Evaluation-only script:
 import json
 import random
 from pathlib import Path
-from xml.parsers.expat import model
 import numpy as np
 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset
 
+GLOBAL_VOCAB = {}
 
 # =========================
 # Dataset
@@ -47,17 +47,16 @@ class PDETensorTextDataset(Dataset):
 # =========================
 # Tokenizer (same as training)
 # =========================
-def simple_tokenize(texts, max_len=16, vocab=None):
-    if vocab is None:
-        vocab = {}
-
+def simple_tokenize(texts, max_len=16, vocab=GLOBAL_VOCAB):
     token_ids = torch.zeros(len(texts), max_len, dtype=torch.long)
+
     for i, txt in enumerate(texts):
         words = txt.lower().split()[:max_len]
         for j, w in enumerate(words):
             if w not in vocab:
                 vocab[w] = len(vocab) + 1
             token_ids[i, j] = vocab[w]
+
     return token_ids
 
 
@@ -204,11 +203,12 @@ def evaluate_rollout(model, dataset, steps, device, ablation):
 # Main
 # =========================
 def main():
-    device = (
-        "mps" if torch.backends.mps.is_available()
-        else "cuda" if torch.cuda.is_available()
-        else "cpu"
-    )
+    if torch.backends.mps.is_available():
+        device = torch.device("mps")   
+    elif torch.cuda.is_available():
+        device = torch.device("cuda")  
+    else:
+        device = torch.device("cpu")
 
     dataset = PDETensorTextDataset(
         "/Users/divyam/Course/Project Arbeit/pde_solver/src/dataset/annotations_test.jsonl"
@@ -219,9 +219,11 @@ def main():
     "/Users/divyam/Course/Project Arbeit/pde_solver/scripts/checkpoints/text_conditioned_unet.pt",
     map_location=device
     )
+    
+    GLOBAL_VOCAB.clear()
+    GLOBAL_VOCAB.update(ckpt["metadata"]["vocab"])
 
     model.load_state_dict(ckpt["model_state_dict"])
-
 
     steps = 20
 

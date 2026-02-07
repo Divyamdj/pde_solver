@@ -128,7 +128,7 @@ class FiLM(nn.Module):
     def forward(self, x, cond):
         gamma = self.gamma(cond).unsqueeze(-1)
         beta = self.beta(cond).unsqueeze(-1)
-        return gamma * x + beta
+        return (1 + 0.1 * gamma) * x + 0.1 * beta
 
 
 # =========================
@@ -261,7 +261,7 @@ def evaluate_rollout(model, dataloader, rollout_steps, device):
 
     for solution, text in dataloader.dataset.base:
         solution = solution.float()
-        token_ids = torch.zeros(1, 16, dtype=torch.long).to(device)
+        token_ids = simple_tokenize((text,)).to(device)
 
         k = dataloader.dataset.input_steps
         init = solution[:k]
