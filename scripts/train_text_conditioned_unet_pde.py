@@ -26,12 +26,14 @@ batch_size = 16
 epochs = 20
 rollout_steps = 20
 lr = 3e-4
+max_text_len = 16
 
 
 # =========================
-# Global vocabulary (IMPORTANT)
+# Special tokens
 # =========================
-GLOBAL_VOCAB = {}
+PAD_TOKEN = "<PAD>"
+UNK_TOKEN = "<UNK>"
 
 
 # =========================
@@ -84,21 +86,46 @@ class NextStepPDEDataset(Dataset):
 
 
 # =========================
-# Tokenizer
+# Vocabulary building
 # =========================
-def simple_tokenize(texts, max_len=16, vocab=GLOBAL_VOCAB):
+def build_vocab_from_dataset(base_dataset, max_len=16):
+    """
+    Build vocab ONLY from training dataset texts.
+    """
+    vocab = {
+        PAD_TOKEN: 0,
+        UNK_TOKEN: 1,
+    }
+
+    for _, text in base_dataset:
+        words = text.lower().split()[:max_len]
+        for w in words:
+            if w not in vocab:
+                vocab[w] = len(vocab)
+
+    return vocab
+
+
+# =========================
+# Tokenizer (frozen vocab)
+# =========================
+def tokenize_with_vocab(texts, vocab, max_len=16):
     """
     texts: tuple/list of strings (length B)
     returns: LongTensor [B, max_len]
     """
-    token_ids = torch.zeros(len(texts), max_len, dtype=torch.long)
+    token_ids = torch.full(
+        (len(texts), max_len),
+        fill_value=vocab[PAD_TOKEN],
+        dtype=torch.long,
+    )
+
+    unk_id = vocab[UNK_TOKEN]
 
     for i, txt in enumerate(texts):
         words = txt.lower().split()[:max_len]
         for j, w in enumerate(words):
-            if w not in vocab:
-                vocab[w] = len(vocab) + 1  # 0 reserved for padding
-            token_ids[i, j] = vocab[w]
+            token_ids[i, j] = vocab.get(w, unk_id)
 
     return token_ids
 
@@ -107,13 +134,20 @@ def simple_tokenize(texts, max_len=16, vocab=GLOBAL_VOCAB):
 # Text Encoder
 # =========================
 class TextEncoder(nn.Module):
-    def __init__(self, vocab_size=10000, emb_dim=128):
+    def __init__(self, vocab_size, emb_dim=128):
         super().__init__()
-        self.embedding = nn.Embedding(vocab_size, emb_dim)
+        self.embedding = nn.Embedding(vocab_size, emb_dim, padding_idx=0)
 
     def forward(self, token_ids):
-        emb = self.embedding(token_ids)   # [B, L, D]
-        return emb.mean(dim=1)             # [B, D]
+        # token_ids: [B, L]
+        emb = self.embedding(token_ids)  # [B, L, D]
+
+        # Mask padding so PAD doesn't affect the mean
+        pad_mask = (token_ids != 0).float().unsqueeze(-1)  # [B, L, 1]
+        emb = emb * pad_mask
+
+        denom = pad_mask.sum(dim=1).clamp(min=1.0)  # [B, 1]
+        return emb.sum(dim=1) / denom               # [B, D]
 
 
 # =========================
@@ -126,8 +160,10 @@ class FiLM(nn.Module):
         self.beta = nn.Linear(cond_dim, num_channels)
 
     def forward(self, x, cond):
-        gamma = self.gamma(cond).unsqueeze(-1)
-        beta = self.beta(cond).unsqueeze(-1)
+        # x: [B, C, X]
+        # cond: [B, D]
+        gamma = self.gamma(cond).unsqueeze(-1)  # [B, C, 1]
+        beta = self.beta(cond).unsqueeze(-1)    # [B, C, 1]
         return (1 + 0.1 * gamma) * x + 0.1 * beta
 
 
@@ -152,10 +188,10 @@ class DoubleConv1D(nn.Module):
 # Text-conditioned U-Net
 # =========================
 class TextConditionedUNet1D(nn.Module):
-    def __init__(self, in_channels, out_channels, base_ch=64, cond_dim=128):
+    def __init__(self, in_channels, out_channels, vocab_size, base_ch=64, cond_dim=128):
         super().__init__()
 
-        self.text_encoder = TextEncoder(emb_dim=cond_dim)
+        self.text_encoder = TextEncoder(vocab_size=vocab_size, emb_dim=cond_dim)
 
         self.enc1 = DoubleConv1D(in_channels, base_ch)
         self.enc2 = DoubleConv1D(base_ch, base_ch * 2)
@@ -179,7 +215,7 @@ class TextConditionedUNet1D(nn.Module):
         self.out = nn.Conv1d(base_ch, out_channels, 1)
 
     def forward(self, x, token_ids):
-        cond = self.text_encoder(token_ids)
+        cond = self.text_encoder(token_ids)  # [B, D]
 
         e1 = self.film1(self.enc1(x), cond)
         e2 = self.film2(self.enc2(self.pool(e1)), cond)
@@ -202,12 +238,12 @@ class TextConditionedUNet1D(nn.Module):
 # =========================
 # Training / Evaluation
 # =========================
-def train_next_step(model, dataloader, optimizer, device, epochs):
+def train_next_step(model, dataloader, optimizer, device, vocab, epochs):
     model.train()
     for epoch in range(epochs):
         total_loss = 0.0
         for x, y, texts in dataloader:
-            token_ids = simple_tokenize(texts).to(device)
+            token_ids = tokenize_with_vocab(texts, vocab, max_len=max_text_len).to(device)
             x, y = x.to(device), y.to(device)
 
             preds = model(x, token_ids)
@@ -223,15 +259,17 @@ def train_next_step(model, dataloader, optimizer, device, epochs):
 
 
 @torch.no_grad()
-def evaluate_next_step(model, dataloader, device):
+def evaluate_next_step(model, dataloader, device, vocab):
     model.eval()
     mse, n = 0.0, 0
     for x, y, texts in dataloader:
-        token_ids = simple_tokenize(texts).to(device)
+        token_ids = tokenize_with_vocab(texts, vocab, max_len=max_text_len).to(device)
         x, y = x.to(device), y.to(device)
+
         preds = model(x, token_ids)
         mse += F.mse_loss(preds, y, reduction="sum").item()
         n += y.numel()
+
     return mse / n
 
 
@@ -241,27 +279,30 @@ def evaluate_next_step(model, dataloader, device):
 @torch.no_grad()
 def rollout_prediction(model, init_sequence, token_ids, rollout_steps, device):
     model.eval()
-    context = init_sequence.clone().to(device)
+    context = init_sequence.clone().to(device)  # [k, X]
     preds = []
 
     for _ in range(rollout_steps):
-        x = context.unsqueeze(0)
-        next_step = model(x, token_ids).squeeze()
+        x = context.unsqueeze(0)                # [1, k, X]
+        out = model(x, token_ids)               # [1, 1, X]
+
+        next_step = out[0, 0]                   # [X] safe, no squeeze()
         preds.append(next_step.cpu())
+
         context = torch.cat([context[1:], next_step.unsqueeze(0)], dim=0)
 
-    return torch.stack(preds)
+    return torch.stack(preds)                   # [T, X]
 
 
 @torch.no_grad()
-def evaluate_rollout(model, dataloader, rollout_steps, device):
+def evaluate_rollout(model, dataloader, rollout_steps, device, vocab):
     model.eval()
     mse_per_step = torch.zeros(rollout_steps)
     count = 0
 
     for solution, text in dataloader.dataset.base:
         solution = solution.float()
-        token_ids = simple_tokenize((text,)).to(device)
+        token_ids = tokenize_with_vocab((text,), vocab, max_len=max_text_len).to(device)
 
         k = dataloader.dataset.input_steps
         init = solution[:k]
@@ -300,15 +341,17 @@ def main():
         "/Users/divyam/Course/Project Arbeit/pde_solver/src/dataset/annotations_test.jsonl"
     )
 
+    # Build vocab ONLY from training set
+    vocab = build_vocab_from_dataset(train_base, max_len=max_text_len)
+    vocab_size = len(vocab)
+
+    print(f"Vocab size (train-only): {vocab_size}")
+
     train_dataset = NextStepPDEDataset(train_base, input_steps=input_steps)
     test_dataset = NextStepPDEDataset(test_base, input_steps=input_steps)
 
-    train_loader = DataLoader(
-        train_dataset, batch_size=batch_size, shuffle=True
-    )
-    test_loader = DataLoader(
-        test_dataset, batch_size=batch_size, shuffle=False
-    )
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
     device = (
         "mps" if torch.backends.mps.is_available()
@@ -319,20 +362,17 @@ def main():
     model = TextConditionedUNet1D(
         in_channels=input_steps,
         out_channels=1,
+        vocab_size=vocab_size,
     ).to(device)
 
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
 
-    train_next_step(model, train_loader, optimizer, device, epochs)
+    train_next_step(model, train_loader, optimizer, device, vocab, epochs)
 
-    print(
-        "Text-conditioned next-step MSE:",
-        evaluate_next_step(model, test_loader, device),
-    )
+    test_mse = evaluate_next_step(model, test_loader, device, vocab)
+    print("Text-conditioned next-step MSE:", test_mse)
 
-    rollout_mse = evaluate_rollout(
-        model, test_loader, rollout_steps, device
-    )
+    rollout_mse = evaluate_rollout(model, test_loader, rollout_steps, device, vocab)
     for t, err in enumerate(rollout_mse, 1):
         print(f"Step {t:02d}: MSE = {err.item():.6f}")
 
@@ -345,7 +385,8 @@ def main():
             "epochs": epochs,
             "rollout_steps": rollout_steps,
             "lr": lr,
-            "vocab": GLOBAL_VOCAB,
+            "max_text_len": max_text_len,
+            "vocab": vocab,
             "model": "TextConditionedUNet1D",
         },
     )

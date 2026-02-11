@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
 Evaluation-only script:
-- Loads trained text-conditioned U-Net
-- Runs rollout comparison:
-    * correct text
-    * shuffled text
-    * empty text
+- Loads a trained text-conditioned U-Net checkpoint
+- Runs rollout comparison under text ablations:
+    1) correct text
+    2) shuffled text (dataset-level permutation)
+    3) empty text
 """
 
 # =========================
@@ -21,7 +21,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import Dataset
 
+# Global vocab restored from checkpoint metadata
 GLOBAL_VOCAB = {}
+
 
 # =========================
 # Dataset
@@ -38,45 +40,35 @@ class PDETensorTextDataset(Dataset):
 
     def __getitem__(self, idx):
         s = self.samples[idx]
-        tensor = torch.from_numpy(
-            np.load(self.root / s["tensor"])
-        ).to(self.dtype)
+        tensor = torch.from_numpy(np.load(self.root / s["tensor"])).to(self.dtype)
         return tensor, s["text"]
 
 
 # =========================
-# Tokenizer (same as training)
+# Tokenizer (must match training)
 # =========================
 def simple_tokenize(texts, max_len=16, vocab=GLOBAL_VOCAB):
+    """
+    texts: list/tuple[str], length B
+    returns: LongTensor [B, max_len]
+    """
     token_ids = torch.zeros(len(texts), max_len, dtype=torch.long)
 
     for i, txt in enumerate(texts):
         words = txt.lower().split()[:max_len]
         for j, w in enumerate(words):
             if w not in vocab:
-                vocab[w] = len(vocab) + 1
-            token_ids[i, j] = vocab[w]
+                # NOTE: for evaluation we should NOT expand vocab,
+                # but we keep this safe: unseen words -> 0 (padding)
+                token_ids[i, j] = 0
+            else:
+                token_ids[i, j] = vocab[w]
 
     return token_ids
 
 
 # =========================
-# Text ablation
-# =========================
-def ablate_text(texts, mode):
-    if mode == "correct":
-        return texts
-    if mode == "shuffled":
-        texts = list(texts)
-        random.shuffle(texts)
-        return tuple(texts)
-    if mode == "empty":
-        return tuple("" for _ in texts)
-    raise ValueError(mode)
-
-
-# =========================
-# Model definitions (IDENTICAL)
+# Model definitions (must match training)
 # =========================
 class DoubleConv1D(nn.Module):
     def __init__(self, in_ch, out_ch):
@@ -93,7 +85,7 @@ class DoubleConv1D(nn.Module):
 
 
 class TextEncoder(nn.Module):
-    def __init__(self, vocab_size=10000, emb_dim=128):
+    def __init__(self, vocab_size, emb_dim=128):
         super().__init__()
         self.embedding = nn.Embedding(vocab_size, emb_dim)
 
@@ -110,14 +102,15 @@ class FiLM(nn.Module):
     def forward(self, x, cond):
         gamma = self.gamma(cond).unsqueeze(-1)
         beta = self.beta(cond).unsqueeze(-1)
+        # Stabilized FiLM (recommended)
         return (1 + 0.1 * gamma) * x + 0.1 * beta
 
 
 class TextConditionedUNet1D(nn.Module):
-    def __init__(self, in_channels, out_channels, base_ch=64, cond_dim=128):
+    def __init__(self, in_channels, out_channels, vocab_size, base_ch=64, cond_dim=128):
         super().__init__()
 
-        self.text_encoder = TextEncoder(emb_dim=cond_dim)
+        self.text_encoder = TextEncoder(vocab_size=vocab_size, emb_dim=cond_dim)
 
         self.enc1 = DoubleConv1D(in_channels, base_ch)
         self.enc2 = DoubleConv1D(base_ch, base_ch * 2)
@@ -171,22 +164,50 @@ def rollout_prediction(model, init, token_ids, steps, device):
     preds = []
 
     for _ in range(steps):
-        x = ctx.unsqueeze(0)
-        y = model(x, token_ids).squeeze()
+        x = ctx.unsqueeze(0)                # [1, k, X]
+        y = model(x, token_ids).squeeze()   # [X]
         preds.append(y.cpu())
         ctx = torch.cat([ctx[1:], y.unsqueeze(0)], dim=0)
 
-    return torch.stack(preds)
+    return torch.stack(preds)              # [T, X]
+
+
+# =========================
+# Text Ablation Setup (dataset-level)
+# =========================
+def build_text_views(dataset, seed=0):
+    """
+    Returns 3 lists of texts aligned with dataset indices:
+        texts_correct[i]  = original text for sample i
+        texts_shuffled[i] = text from a different sample (permutation)
+        texts_empty[i]    = ""
+    """
+    texts_correct = [dataset[i][1] for i in range(len(dataset))]
+
+    rng = random.Random(seed)
+    perm = list(range(len(dataset)))
+    rng.shuffle(perm)
+    texts_shuffled = [texts_correct[j] for j in perm]
+
+    texts_empty = ["" for _ in range(len(dataset))]
+
+    return texts_correct, texts_shuffled, texts_empty
 
 
 @torch.no_grad()
-def evaluate_rollout(model, dataset, steps, device, ablation):
+def evaluate_rollout_with_text_list(model, dataset, text_list, steps, device):
+    """
+    dataset: PDETensorTextDataset
+    text_list: list[str] aligned with dataset indices
+    """
     mse = torch.zeros(steps)
     n = 0
 
-    for sol, text in dataset:
-        text = ablate_text((text,), ablation)
-        token_ids = simple_tokenize(text).to(device)
+    for i in range(len(dataset)):
+        sol, _ = dataset[i]
+        text = text_list[i]
+
+        token_ids = simple_tokenize((text,)).to(device)  # [1, L]
 
         sol = sol.float()
         init = sol[:5]
@@ -203,37 +224,60 @@ def evaluate_rollout(model, dataset, steps, device, ablation):
 # Main
 # =========================
 def main():
+    # ----- Device -----
     if torch.backends.mps.is_available():
-        device = torch.device("mps")   
+        device = torch.device("mps")
     elif torch.cuda.is_available():
-        device = torch.device("cuda")  
+        device = torch.device("cuda")
     else:
         device = torch.device("cpu")
 
-    dataset = PDETensorTextDataset(
-        "/Users/divyam/Course/Project Arbeit/pde_solver/src/dataset/annotations_test.jsonl"
-    )
+    # ----- Paths -----
+    test_jsonl = "/Users/divyam/Course/Project Arbeit/pde_solver/src/dataset/annotations_test.jsonl"
+    ckpt_path = "/Users/divyam/Course/Project Arbeit/pde_solver/scripts/checkpoints/text_conditioned_unet.pt"
 
-    model = TextConditionedUNet1D(in_channels=5, out_channels=1).to(device)
-    ckpt = torch.load(
-    "/Users/divyam/Course/Project Arbeit/pde_solver/scripts/checkpoints/text_conditioned_unet.pt",
-    map_location=device
-    )
-    
+    # ----- Load dataset -----
+    dataset = PDETensorTextDataset(test_jsonl)
+
+    # ----- Load checkpoint -----
+    ckpt = torch.load(ckpt_path, map_location=device)
+
+    # ----- Restore vocab correctly -----
     GLOBAL_VOCAB.clear()
     GLOBAL_VOCAB.update(ckpt["metadata"]["vocab"])
 
+    vocab_size = ckpt["model_state_dict"]["text_encoder.embedding.weight"].shape[0]
+
+    # ----- Build model with correct vocab size -----
+    model = TextConditionedUNet1D(
+        in_channels=5,
+        out_channels=1,
+        vocab_size=vocab_size
+    ).to(device)
+
     model.load_state_dict(ckpt["model_state_dict"])
+    model.eval()
+
+    # ----- Build text ablation views (dataset-level shuffle) -----
+    texts_correct, texts_shuffled, texts_empty = build_text_views(dataset, seed=0)
 
     steps = 20
 
-    print("\n=== Text Ablation Rollout MSE ===")
+    print("\n=== Text Ablation Rollout MSE (Evaluation Only) ===")
 
-    for mode in ["correct", "shuffled", "empty"]:
-        mse = evaluate_rollout(model, dataset, steps, device, mode)
-        print(f"\n[{mode.upper()}]")
-        for i, v in enumerate(mse, 1):
-            print(f"Step {i:02d}: {v.item():.2f}")
+    mse_correct = evaluate_rollout_with_text_list(model, dataset, texts_correct, steps, device)
+    mse_shuffled = evaluate_rollout_with_text_list(model, dataset, texts_shuffled, steps, device)
+    mse_empty = evaluate_rollout_with_text_list(model, dataset, texts_empty, steps, device)
+
+    print("\nStep | Correct | Shuffled | Empty")
+    print("----------------------------------")
+    for t in range(steps):
+        print(
+            f"{t+1:02d}   | "
+            f"{mse_correct[t].item():10.2f} | "
+            f"{mse_shuffled[t].item():10.2f} | "
+            f"{mse_empty[t].item():10.2f}"
+        )
 
 
 if __name__ == "__main__":

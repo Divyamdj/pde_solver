@@ -11,33 +11,33 @@ Both models predict the next PDE timestep given the previous **k = 5** timesteps
 
 ## Vision-only baseline (U-Net)
 
-**Test next-step MSE:** `1.7387`
+**Test next-step MSE:** `1.6853`
 
 **Rollout MSE (20 steps):**
 
 | Step | MSE |
 |------|-----|
-| 1    | 1.74 |
-| 5    | 103.25 |
-| 10   | 844.69 |
-| 15   | 1251.89 |
-| 20   | 1285.60 |
+| 1    | 1.69 |
+| 5    | 74.87 |
+| 10   | 340.37 |
+| 15   | 722.39 |
+| 20   | 1322.13 |
 
 ---
 
 ## Text-conditioned U-Net (FiLM)
 
-**Test next-step MSE:** `1.6236`
+**Test next-step MSE:** `1.9386`
 
 **Rollout MSE (20 steps):**
 
 | Step | MSE |
 |------|-----|
-| 1    | 1.62 |
-| 5    | 61.37 |
-| 10   | 195.01 |
-| 15   | 328.37 |
-| 20   | 473.15 |
+| 1    | 1.94 |
+| 5    | 125.95 |
+| 10   | 642.56 |
+| 15   | 1675.80 |
+| 20   | 3517.97 |
 
 ---
 
@@ -53,25 +53,6 @@ We evaluated rollout performance under three text conditions:
 
 | Condition | Step 1 | Step 10 | Step 20 |
 |----------|--------|---------|---------|
-| Correct  | 1.62   | 195.01  | 473.15  |
-| Shuffled | 1.62   | 195.01  | 473.15  |
-| Empty    | 2.37   | 799.99  | 3581.56 |
-
----
-
-## Interpretation
-
-- **Text-conditioning improves rollout stability significantly**, and also improves next-step prediction accuracy.
-- **Correct vs Shuffled are identical**, which suggests the model is not using *sample-specific* text information.
-- **Empty text is much worse**, indicating the model relies on the presence of text embeddings as a stabilizing signal (even if the exact pairing is not important).
-
----
-
-## Summary
-
-Text-conditioning improves both:
-
-- **Next-step prediction MSE** (1.7387 → 1.6236)
-- **Long-horizon rollout stability** (Step 20 MSE: 1285.60 → 473.15)
-
-However, the ablation results suggest the model currently treats text more like a global prior than a sample-specific conditioning signal.
+| Correct  | 1.85   | 480.93  | 2438.72 |
+| Shuffled | 1.85   | 484.05  | 2441.80 |
+| Empty    | 1.79   | 198.27  | 463.94  |
