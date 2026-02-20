@@ -1,0 +1,2 @@
+_target_: the_well.benchmark.models.unet_classic.UNetClassic
+init_features: 48

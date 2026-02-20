@@ -1,0 +1,4 @@
+# @package _global_
+data:
+  well_base_path: "/Users/divyam/Course/Project Arbeit/the_well/datasets/"
+experiment_dir: "experiments/"

@@ -1,0 +1,4 @@
+_target_: the_well.benchmark.models.unet_classic_conditioned.UNetClassicConditioned
+init_features: 48
+emb_dim: 384
+cond_channels: 16
