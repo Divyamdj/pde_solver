@@ -25,7 +25,7 @@ data:
   - turbulent_radiative_layer_2D
   - active_matter
   test_datasets:
-  - turbulent_radiative_layer_2D
+  - helmholtz_staircase
   batch_size: 8
   n_steps_input: 4
   n_steps_output: 1
@@ -48,14 +48,12 @@ data:
     _partial_: true
     _target_: the_well.data.datasets.WellDataset
 model:
-  _target_: the_well.benchmark.models.unet_classic_conditioned.UNetClassicConditioned
+  _target_: the_well.benchmark.models.unet_classic.UNetClassic
   init_features: 48
-  emb_dim: 384
-  cond_channels: 16
 lr_scheduler:
   _target_: the_well.benchmark.optim.schedulers.LinearWarmupCosineAnnealingLR
   warmup_epochs: 5
-name: unet_classic_conditioned
+name: unet_classic
 experiment_dir: experiments/
 auto_resume: false
 folder_override: ''

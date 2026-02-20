@@ -16,7 +16,7 @@ val_datasets:
 
 # Test datasets - for final testing/evaluation
 test_datasets:
-  - turbulent_radiative_layer_2D
+  - helmholtz_staircase
 
 # Dataset parameters
 batch_size: 8

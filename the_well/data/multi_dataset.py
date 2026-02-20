@@ -110,6 +110,7 @@ class MultiWellDataset(Dataset):
         cache_embeddings: bool = True,
         global_field_names: Optional[List[str]] = None,
         global_constant_scalar_names: Optional[List[str]] = None,
+        dataset_name_override: Optional[str] = None,
     ):
         super().__init__()
         random.seed(cfg.seed)
@@ -236,6 +237,10 @@ class MultiWellDataset(Dataset):
         # -----------------------------
         # We reuse metadata object from dataset[0] but overwrite the relevant parts.
         self.metadata = self.datasets[0].metadata
+        
+        # Allow override of dataset name for test/val datasets to distinguish them
+        if dataset_name_override is not None:
+            self.metadata.dataset_name = dataset_name_override
 
         # These are used by plotting/metrics - use the global field names list
         if hasattr(self.metadata, "core_field_names"):
@@ -278,6 +283,9 @@ class MultiWellDataset(Dataset):
         sample.pop("space_grid", None)
         sample.pop("input_time_grid", None)
         sample.pop("output_time_grid", None)
+        # In multi-dataset mode, drop constant_fields since they break channel alignment
+        # (different datasets have different constant field combinations)
+        sample.pop("constant_fields", None)
 
         # -----------------------------
         # Resize fields

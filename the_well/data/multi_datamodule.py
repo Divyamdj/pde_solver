@@ -41,6 +41,57 @@ class MultiWellDataModule(AbstractDataModule):
             device="cpu",
         )
 
+        # Build the global field schema from ALL datasets (train + val + test)
+        # to ensure that fields from any dataset can be represented
+        from the_well.data.datasets import WellDataset
+        
+        global_field_names = []
+        global_constant_scalar_names = []
+        
+        # Collect all unique fields and scalars across all splits
+        all_dataset_names = set(self.train_datasets + self.val_datasets + self.test_datasets)
+        
+        for dname in all_dataset_names:
+            # Load metadata from each dataset to extract its field names
+            for split in ["train", "valid", "test"]:
+                try:
+                    temp_dset = WellDataset(
+                        well_base_path=self.well_base_path,
+                        well_dataset_name=dname,
+                        well_split_name=split,
+                        use_normalization=False,
+                        min_dt_stride=1,
+                        max_dt_stride=1,
+                        n_steps_input=self.n_steps_input,
+                        n_steps_output=self.n_steps_output,
+                        return_grid=False,
+                        boundary_return_type=None,
+                    )
+                    meta = temp_dset.metadata
+                    
+                    # Extract field names
+                    field_names_dict = getattr(meta, "field_names", {})
+                    for order in sorted(field_names_dict.keys()):
+                        for fn in field_names_dict[order]:
+                            if fn not in global_field_names:
+                                global_field_names.append(fn)
+                    
+                    # Extract constant scalar names
+                    names = getattr(meta, "constant_scalar_names", None)
+                    if names is None:
+                        names = getattr(meta, "constant_scalars_names", None)
+                    if names is None:
+                        names = []
+                    
+                    for sn in list(names):
+                        if sn not in global_constant_scalar_names:
+                            global_constant_scalar_names.append(sn)
+                    
+                    break  # Successfully loaded this dataset, move to next
+                except (FileNotFoundError, Exception):
+                    # Try next split if this one doesn't exist
+                    continue
+
         self.train_dataset = MultiWellDataset(
             MultiWellConfig(
                 dataset_names=self.train_datasets,
@@ -55,12 +106,9 @@ class MultiWellDataModule(AbstractDataModule):
             ),
             embedder=embedder,
             normalization_type=ZScoreNormalization,
+            global_field_names=global_field_names,
+            global_constant_scalar_names=global_constant_scalar_names,
         )
-
-        # Use the training dataset's global field schema for val and test
-        # This ensures consistent channel ordering across train/val/test splits
-        global_field_names = self.train_dataset.global_field_names
-        global_constant_scalar_names = self.train_dataset.global_constant_scalar_names
 
         self.val_dataset = MultiWellDataset(
             MultiWellConfig(
@@ -78,6 +126,7 @@ class MultiWellDataModule(AbstractDataModule):
             normalization_type=ZScoreNormalization,
             global_field_names=global_field_names,
             global_constant_scalar_names=global_constant_scalar_names,
+            dataset_name_override="_".join(self.val_datasets),
         )
 
         self.test_dataset = MultiWellDataset(
@@ -96,6 +145,7 @@ class MultiWellDataModule(AbstractDataModule):
             normalization_type=ZScoreNormalization,
             global_field_names=global_field_names,
             global_constant_scalar_names=global_constant_scalar_names,
+            dataset_name_override="_".join(self.test_datasets),
         )
 
     def train_dataloader(self):

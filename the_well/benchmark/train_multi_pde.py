@@ -232,6 +232,8 @@ def train(
             optimizer,
             warmup_epochs=cfg.lr_scheduler.warmup_epochs,
             max_epochs=cfg.trainer.epochs,
+            warmup_start_lr=cfg.optimizer.lr * 0.1,
+            eta_min=cfg.optimizer.lr * 0.1,
         )
     else:
         logger.info("No learning rate scheduler")

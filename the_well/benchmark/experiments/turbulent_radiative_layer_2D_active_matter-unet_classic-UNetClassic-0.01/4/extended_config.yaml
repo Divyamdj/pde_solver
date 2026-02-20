@@ -25,7 +25,7 @@ data:
   - turbulent_radiative_layer_2D
   - active_matter
   test_datasets:
-  - turbulent_radiative_layer_2D
+  - helmholtz_staircase
   batch_size: 8
   n_steps_input: 4
   n_steps_output: 1
