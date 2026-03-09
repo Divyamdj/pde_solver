@@ -1,6 +1,6 @@
 trainer:
   _target_: the_well.benchmark.trainer.Trainer
-  epochs: 1
+  epochs: 20
   val_frequency: 1
   rollout_val_frequency: 2
   short_validation_length: 20
@@ -25,7 +25,7 @@ data:
   - turbulent_radiative_layer_2D
   - active_matter
   test_datasets:
-  - turbulent_radiative_layer_2D
+  - helmholtz_staircase
   batch_size: 8
   n_steps_input: 4
   n_steps_output: 1
@@ -40,7 +40,7 @@ data:
   cond_channels: 16
   emb_dim: 384
   lr: 0.01
-  epochs: 1
+  epochs: 20
   normalization_type:
     _partial_: true
     _target_: the_well.data.normalization.ZScoreNormalization

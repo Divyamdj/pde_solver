@@ -39,4 +39,4 @@ emb_dim: 384
 
 # Training parameters
 lr: 0.01
-epochs: 1
+epochs: 20

@@ -1,6 +1,6 @@
 trainer:
   _target_: the_well.benchmark.trainer.Trainer
-  epochs: 1
+  epochs: 20
   val_frequency: 1
   rollout_val_frequency: 2
   short_validation_length: 20
@@ -11,7 +11,7 @@ trainer:
   loss_fn:
     _target_: the_well.benchmark.metrics.MSE
   checkpoint_path: ''
-  formatter: channels_first_default
+  formatter: channels_last_default
 optimizer:
   _target_: torch.optim.AdamW
   lr: 0.01
@@ -40,7 +40,7 @@ data:
   cond_channels: 16
   emb_dim: 384
   lr: 0.01
-  epochs: 1
+  epochs: 20
   normalization_type:
     _partial_: true
     _target_: the_well.data.normalization.ZScoreNormalization
@@ -48,14 +48,13 @@ data:
     _partial_: true
     _target_: the_well.data.datasets.WellDataset
 model:
-  _target_: the_well.benchmark.models.unet_classic_conditioned.UNetClassicConditioned
-  init_features: 48
-  emb_dim: 384
-  cond_channels: 16
+  _target_: the_well.benchmark.models.AViT
+  hidden_dim: 384
+  num_heads: 6
 lr_scheduler:
   _target_: the_well.benchmark.optim.schedulers.LinearWarmupCosineAnnealingLR
   warmup_epochs: 5
-name: unet_classic_conditioned
+name: avit
 experiment_dir: experiments/
 auto_resume: false
 folder_override: ''

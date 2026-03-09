@@ -12,8 +12,16 @@ from the_well.benchmark.metrics import MSE
 from the_well.benchmark.optim.schedulers import LinearWarmupCosineAnnealingLR
 from the_well.benchmark.trainer import Trainer
 from the_well.benchmark.utils.experiment_utils import configure_experiment
-from the_well.benchmark.models.unet_classic_conditioned import UNetClassicConditioned
+from hydra.utils import instantiate
 from the_well.data.multi_datamodule import MultiWellDataModule
+
+# NOTE: we used to import UNetClassicConditioned directly since the original
+# script only supported that architecture.  The multi-dataset trainer is
+# intended to mirror :mod:`train.py` as closely as possible, which uses
+# ``hydra.utils.instantiate`` so that any model defined in a config can be
+# constructed.  Removing the hard dependency also avoids crashes when a
+# config (e.g. ``avit``) doesn't expose ``init_features``/``emb_dim`` etc.
+
 
 logger = logging.getLogger("the_well")
 logger.setLevel(level=logging.DEBUG)
@@ -75,12 +83,8 @@ def _ensure_nested_cfg(cfg: DictConfig) -> DictConfig:
                 "max_dt_stride": cfg.get("max_dt_stride", 1),
             },
 
-            # model block
-            "model": {
-                "init_features": cfg.get("init_features", 48),
-                "cond_channels": cfg.get("cond_channels", 16),
-                "emb_dim": cfg.get("emb_dim", 384),
-            },
+            # model block starts empty; we'll merge any remaining flat keys later
+            "model": {},
 
             # optimizer block
             "optimizer": {
@@ -95,7 +99,7 @@ def _ensure_nested_cfg(cfg: DictConfig) -> DictConfig:
 
             # trainer block
             "trainer": {
-                "epochs": cfg.get("epochs", 1),
+                "epochs": cfg.get("epochs", 20),
                 "checkpoint_frequency": cfg.get("checkpoint_frequency", 10),
                 "val_frequency": cfg.get("val_frequency", 1),
                 "rollout_val_frequency": cfg.get("rollout_val_frequency", 2),
@@ -107,6 +111,51 @@ def _ensure_nested_cfg(cfg: DictConfig) -> DictConfig:
             },
         }
     )
+    # copy any flat keys that were not already accounted for into the model block
+    # this allows a flat config with AvIT-specific keys (hidden_dim, num_heads,
+    # etc.) to still work without modifying this function again.
+    known_toplevel = {
+        "name",
+        "experiment_dir",
+        "auto_resume",
+        "folder_override",
+        "checkpoint_override",
+        "config_override",
+        "validation_mode",
+        "wandb_project_name",
+        "data_workers",
+        "enable_amp",
+        # data keys
+        "well_base_path",
+        "train_datasets",
+        "val_datasets",
+        "test_datasets",
+        "batch_size",
+        "n_steps_input",
+        "n_steps_output",
+        "target_hw",
+        "use_normalization",
+        "min_dt_stride",
+        "max_dt_stride",
+        # optimizer
+        "lr",
+        "weight_decay",
+        # scheduler
+        "warmup_epochs",
+        # trainer
+        "epochs",
+        "checkpoint_frequency",
+        "val_frequency",
+        "rollout_val_frequency",
+        "short_validation_length",
+        "max_rollout_steps",
+        "num_time_intervals",
+        "make_rollout_videos",
+        "checkpoint_path",
+    }
+    for k in cfg:
+        if k not in known_toplevel and k not in nested:
+            nested.model[k] = cfg[k]
     return nested
 
 
@@ -173,17 +222,20 @@ def train(
     # -----------------------------------------------------------------
     # MODEL
     # -----------------------------------------------------------------
-    logger.info("Instantiate UNetClassicConditioned")
+    # Use the same instantiation logic as :mod:`train.py` so that any model
+    # declared in the config (UNet, AViT, etc.) can be constructed.  The
+    # ``cfg.model`` block may supply architecture-specific keys and ``instantiate``
+    # will pass them along.  We compute ``dset_metadata`` here to obtain the
+    # spatial dimensionality and resolution for the dataset(s).
+    logger.info(f"Instantiate model {cfg.model._target_}")
 
-    model = UNetClassicConditioned(
+    dset_metadata = datamodule.train_dataset.metadata
+    model: torch.nn.Module = instantiate(
+        cfg.model,
+        n_spatial_dims=dset_metadata.n_spatial_dims,
+        spatial_resolution=dset_metadata.spatial_resolution,
         dim_in=n_input_fields,
         dim_out=n_output_fields,
-        n_spatial_dims=2,
-        spatial_resolution=tuple(cfg.data.target_hw),
-        init_features=cfg.model.init_features,
-        emb_dim=cfg.model.emb_dim,
-        cond_channels=cfg.model.cond_channels,
-        n_steps_output=cfg.data.n_steps_output,
     )
 
     summary(model, depth=5)
@@ -245,11 +297,14 @@ def train(
     logger.info("Instantiate Trainer")
 
     print("--------------------------------------------------", datamodule)
+    # formatter may be overridden by experiment configurations (e.g. AViT uses
+    # ``channels_last``) – default to the same value used in :mod:`train.py`.
+    fmt = cfg.trainer.get("formatter", "channels_first_default")
     trainer = Trainer(
         checkpoint_folder=checkpoint_folder,
         artifact_folder=artifact_folder,
         viz_folder=viz_folder,
-        formatter="channels_first_default",
+        formatter=fmt,
         model=model,
         datamodule=datamodule,
         optimizer=optimizer,

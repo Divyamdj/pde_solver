@@ -1,7 +1,7 @@
 defaults:
   - defaults
 
-epochs: 1
+epochs: 20
 val_frequency: 1
 loss_fn:
   _target_: torch.nn.MSELoss
