@@ -1,0 +1,66 @@
+trainer:
+  _target_: the_well.benchmark.trainer.Trainer
+  epochs: 20
+  val_frequency: 1
+  rollout_val_frequency: 2
+  short_validation_length: 20
+  max_rollout_steps: 100
+  num_time_intervals: 5
+  make_rollout_videos: false
+  checkpoint_frequency: 20
+  loss_fn:
+    _target_: the_well.benchmark.metrics.MSE
+  checkpoint_path: ''
+  formatter: channels_first_default
+optimizer:
+  _target_: torch.optim.AdamW
+  lr: 0.01
+  weight_decay: 0.0001
+data:
+  well_base_path: /Users/divyam/Course/Project Arbeit/the_well/datasets/
+  train_datasets:
+  - turbulent_radiative_layer_2D
+  - active_matter
+  val_datasets:
+  - turbulent_radiative_layer_2D
+  - active_matter
+  test_datasets:
+  - helmholtz_staircase
+  batch_size: 8
+  n_steps_input: 4
+  n_steps_output: 1
+  target_hw:
+  - 128
+  - 384
+  use_normalization: true
+  min_dt_stride: 1
+  max_dt_stride: 1
+  data_workers: 8
+  init_features: 48
+  cond_channels: 16
+  emb_dim: 384
+  lr: 0.01
+  epochs: 20
+  normalization_type:
+    _partial_: true
+    _target_: the_well.data.normalization.ZScoreNormalization
+  train_dataset:
+    _partial_: true
+    _target_: the_well.data.datasets.WellDataset
+model:
+  _target_: the_well.benchmark.models.unet_classic_conditioned.UNetClassicConditioned
+  init_features: 48
+  emb_dim: 384
+  cond_channels: 16
+lr_scheduler:
+  _target_: the_well.benchmark.optim.schedulers.LinearWarmupCosineAnnealingLR
+  warmup_epochs: 5
+name: unet_classic_conditioned
+experiment_dir: experiments/
+auto_resume: false
+folder_override: ''
+checkpoint_override: ''
+config_override: ''
+validation_mode: false
+data_workers: 12
+wandb_project_name: the_well_extended_again

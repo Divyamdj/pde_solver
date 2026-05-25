@@ -23,7 +23,7 @@ class MultiWellDataModule(AbstractDataModule):
     batch_size: int = 16
     data_workers: int = 4
 
-    n_steps_input: int = 4
+    n_steps_input: int = 8
     n_steps_output: int = 1
     min_dt_stride: int = 1
     max_dt_stride: int = 1
