@@ -332,15 +332,7 @@ Generalization is a key requirement for practical PDE solvers. In many
 applications, a model must operate under conditions that differ from
 those seen during training, including new initial conditions,
 parameters, boundary conditions, or even governing equations. Such
-scenarios are commonly referred to as OOD settings, as illustrated in
-\autoref{fig:ood}.
-
-\begin{figure}[h]
-\centering
-\caption{Illustration of in-distribution, out-of-domain, and out-of-distribution settings.}
-\label{fig:ood}
-\includegraphics[width=0.7\textwidth]{figures/ood_example.png}
-\end{figure}
+scenarios are commonly referred to as OOD settings.
 
 Data-driven models often perform well in-distribution but degrade
 sharply in OOD settings because they learn correlations from the
@@ -505,9 +497,9 @@ grid-based setting.
 We consider the problem of learning a data-driven surrogate model for
 solving PDEs. Let the physical system be described by a PDE of the form:
 
-\[
+\begin{equation}
 \mathcal{F}(u, \nabla u, \nabla^2 u, x, t; \theta) = 0
-\]
+\end{equation}
 
 where \(u(x,t)\) represents the system state defined over spatial domain
 \(x \in \Omega\) and time \(t \in \mathbb{R}^+\), and \(\theta\) denotes
@@ -516,9 +508,9 @@ system-specific parameters such as coefficients and boundary conditions.
 The goal is to learn a parameterized evolution map that approximates
 one-step dynamics:
 
-\[
+\begin{equation}
 \hat{u}_{t+1} = f_\phi(u_{t-T_i+1:t}, c)
-\]
+\end{equation}
 
 where: - \(u_{t-T_i+1:t}\) denotes the sequence of \(T_i\) input
 timesteps, - \(c\) represents the projected text-conditioning vector, -
@@ -533,15 +525,15 @@ number of physical variables and \(H, W\) denote the spatial resolution.
 The input to the model is constructed by stacking past timesteps along
 the channel dimension:
 
-\[
+\begin{equation}
 X_t = [u_{t-T_i+1}, \ldots, u_t] \in \mathbb{R}^{(T_i C) \times H \times W}.
-\]
+\end{equation}
 
 The target output is:
 
-\[
+\begin{equation}
 Y_t = [u_{t+1}, \ldots, u_{t+T_o}] \in \mathbb{R}^{(T_o C) \times H \times W}.
-\]
+\end{equation}
 
 \subsection{Text-Based Conditioning}\label{text-based-conditioning}
 
@@ -566,16 +558,16 @@ the text description and \(g_{\mathrm{MiniLM}}\) denote this frozen
 encoder. The resulting embeddings are cached in
 \texttt{pde\_text\_embeddings.pt} and reused during training:
 
-\[
+\begin{equation}
 e = g_{\mathrm{MiniLM}}(s), \qquad e \in \mathbb{R}^{384}.
-\]
+\end{equation}
 
 The embedding is then projected into a conditioning vector using a
 feedforward network:
 
-\[
+\begin{equation}
  c = W_2 \sigma(W_1 e + b_1) + b_2
-\]
+\end{equation}
 
 where:
 
@@ -652,9 +644,9 @@ encoder--decoder structure with skip connections as shown in
 
 The encoder progressively extracts hierarchical features:
 
-\[
+\begin{equation}
 h_1 = B_1(X_t), \qquad h_l = B_l(\operatorname{Pool}(h_{l-1})), \quad l = 2,\ldots,4.
-\]
+\end{equation}
 
 Each block consists of two repeated convolutional stages with batch
 normalization and Tanh activations.
@@ -662,25 +654,25 @@ normalization and Tanh activations.
 The spatial resolution is reduced using max pooling, while the number of
 channels increases:
 
-\[
+\begin{equation}
 48 \rightarrow 96 \rightarrow 192 \rightarrow 384 \rightarrow 768
-\]
+\end{equation}
 
 \subsubsection{Bottleneck}\label{bottleneck}
 
 At the lowest resolution, the model captures global context:
 
-\[
+\begin{equation}
 h_{\mathrm{b}} = B_{\mathrm{b}}(\operatorname{Pool}(h_4))
-\]
+\end{equation}
 
 \subsubsection{Decoder}\label{decoder}
 
 The decoder reconstructs the output through upsampling:
 
-\[
+\begin{equation}
 \tilde{h}_l = D_l(\operatorname{Concat}_{\mathrm{ch}}(\operatorname{Up}(\tilde{h}_{l+1}), h_l)), \quad l = 4,\ldots,1.
-\]
+\end{equation}
 
 where: - \(\operatorname{Up}(\cdot)\) denotes transposed-convolution
 upsampling, - \(h_l\) denotes the skip connection from the encoder.
@@ -690,30 +682,47 @@ upsampling, - \(h_l\) denotes the skip connection from the encoder.
 The conditioning vector \(c\) is integrated into the model by augmenting
 the input representation:
 
-\[
+\begin{equation}
 X'_t = \operatorname{Concat}_{\mathrm{ch}}(X_t, c^\uparrow), \qquad c^\uparrow \in \mathbb{R}^{16 \times H \times W}.
-\]
+\end{equation}
 
 where \(c^\uparrow\) is a spatially broadcasted version of the
 conditioning vector.
 
 This allows the model to adapt its predictions based on textual context.
 
+\subsection{Experimental Pipeline}\label{experimental-pipeline}
+
+The full experimental pipeline used in this project is summarized in
+\autoref{fig:experimental_pipeline}. A structured PDE description is
+first embedded with a frozen text encoder, while the numerical branch
+receives four input timesteps of multi-channel PDE fields. The
+conditioned UNet concatenates both sources of information to predict the
+next state, and performance is then evaluated through autoregressive
+rollout on an OOD benchmark.
+
+\begin{figure}[h!]
+\centering
+\caption{Experimental pipeline used in this project. The model combines structured PDE descriptions with numerical field histories, predicts the next timestep, and is evaluated through OOD rollout.}
+\label{fig:experimental_pipeline}
+\includegraphics[width=\textwidth]{figures/experimental_pipeline.png}
+\end{figure}
+
 \subsection{Training Objective}\label{training-objective}
 
 The model is trained using supervised learning with a mean squared error
 (MSE) loss:
 
-\[
+\begin{equation}
 L_{\mathrm{MSE}} = \frac{1}{N} \sum_{i=1}^{N} \|\hat{u}_i - u_i\|_2^2
-\]
+\end{equation}
 
 To evaluate robustness, we also consider rollout loss over multiple
 timesteps:
 
-\[
+\begin{equation}
 L_{\mathrm{rollout}} = \frac{1}{T_r} \sum_{\tau=1}^{T_r} L_{\mathrm{MSE}}(\hat{u}_{t+\tau}, u_{t+\tau})
-\]
+\end{equation}
 
 \subsection{Training Procedure}\label{training-procedure}
 

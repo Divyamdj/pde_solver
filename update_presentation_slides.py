@@ -1,5 +1,4 @@
 from __future__ import annotations
-
 import shutil
 import xml.etree.ElementTree as ET
 from pathlib import Path
