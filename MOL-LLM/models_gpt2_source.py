@@ -28,6 +28,7 @@ import warnings
 import torch
 import torch.nn as nn
 from torch.nn import CrossEntropyLoss
+device = torch.device("cpu")
 
 from transformers.activations import ACT2FN
 from transformers import GPT2Config, Conv1D, PreTrainedModel

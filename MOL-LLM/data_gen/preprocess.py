@@ -1,6 +1,9 @@
 import torch
 import torch.nn as nn
 
+# device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
+device = torch.device("cpu")
+
 
 def batch_tokenize(tokenizer, texts):
     """
@@ -121,7 +124,7 @@ def get_data_embeddings(data, dimensions, mlp2_data, mlp2_control, mlp2_coeffs):
     temp = []
     res = []
     # Apply mlp2_data to data[0]
-    res.append(mlp2_data(torch.stack(data[0]).cuda())) # will work the same for PDE input (B, times,spaces, data_components)
+    res.append(mlp2_data(torch.stack(data[0]).to(device))) # will work the same for PDE input (B, times,spaces, data_components)
     #for PDEs data ouptut will be of dimension (B, times x spaces, d = 768)
 
     ############if 1D ODEs have cobntrol but not coefficients use the following##############################
@@ -144,8 +147,8 @@ def get_data_embeddings(data, dimensions, mlp2_data, mlp2_control, mlp2_coeffs):
 
     ##################if 1D ODE only have coefficients:################################
     # Apply mlp2_coeffs to data[2] if dimensions > 0
-    mask_coeffs = (torch.tensor(dimensions)>0).unsqueeze(-1).unsqueeze(-1).float().cuda()
-    temp.append(mlp2_coeffs(torch.stack(data[2]).unsqueeze(1).cuda()) * mask_coeffs)
+    mask_coeffs = (torch.tensor(dimensions)>0).unsqueeze(-1).unsqueeze(-1).float().to(device)
+    temp.append(mlp2_coeffs(torch.stack(data[2]).unsqueeze(1).to(device)) * mask_coeffs)
 
 
     # Combine res[1] and res[2] based on dimensions

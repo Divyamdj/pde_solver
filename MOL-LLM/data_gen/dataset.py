@@ -13,6 +13,7 @@ from torch.utils.data import DataLoader
 
 from .dict_maker import dictionary_maker
 from itertools import chain
+device = torch.device("cpu")
 
 
 def get_file_handler(path):

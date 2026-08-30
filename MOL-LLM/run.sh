@@ -10,7 +10,7 @@ GPU=0
 # CUDA_VISIBLE_DEVICES=$GPU python main.py --data_home_folder /home/elisa/code/icon-gen/PDEs_dataset/ --train_batch_size 70 --t_len 64 --t_end 5 --dataset_workers 1 --epochs 100 --steps_per_epoch 10000 --amp --board --dataset PDE
 
 ##run both (plotting optimized when using a full ODE/PDE dataset)
-CUDA_VISIBLE_DEVICES=$GPU python main.py --data_home_folder /home/elisa/code/icon-gen/Paper_datasets/ --train_batch_size 70 --t_len 64 --t_end 5 --dataset_workers 1 --epochs 100 --steps_per_epoch 10000 --dataset both --amp --board
+CUDA_VISIBLE_DEVICES=$GPU python3 main.py --data_home_folder "/Users/divyam/Course/Project Arbeit/MOL-LLM/MOL-LLM/" --train_batch_size 70 --t_len 128 --t_end 5 --dataset_workers 0 --epochs 100 --steps_per_epoch 10000 --dataset both --amp --board
 
 
 echo "Done"

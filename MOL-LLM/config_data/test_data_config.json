@@ -1,5 +1,5 @@
 {
-    "folder": "Visc_sine/",
+    "folder": "NewExtr/",
     "text_filename": "val_text.prefix",
     "data_filename": "val_data.h5",
     "env_base_seed": 42,

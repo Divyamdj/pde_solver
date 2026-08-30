@@ -1,6 +1,9 @@
 import wandb
 import random
 import torch
+# device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
+device = torch.device("cpu")
+
 import os
 import copy
 
@@ -624,6 +627,7 @@ def run_train():
         trainer = None
     else:
         model = models_text_output.ModelWrapper(model_config)
+        # model.to(device)
         trainer = Trainer(model, model_config, opt_config, trainable_mode=FLAGS.trainable_mode, t_start=FLAGS.t_start, t_end=FLAGS.t_end, t_len=FLAGS.t_len, amp=FLAGS.amp)
 
     # some prints
@@ -803,6 +807,7 @@ def run_test():
         trainer = None
     else:
         model = models_text_output.ModelWrapper(model_config)
+        model.to(device)
         trainer = Trainer(model, model_config, opt_config, trainable_mode=FLAGS.trainable_mode, t_start=FLAGS.t_start, t_end=FLAGS.t_end, t_len=FLAGS.t_len, amp=FLAGS.amp)
 
     test_looper = InfiniteDataLooper(test_loader)
@@ -855,7 +860,7 @@ def run_test():
 
         # Testing loop for calculating total test error and std
         for test_samples in test_loader:
-            queries = torch.linspace(FLAGS.t_start, FLAGS.t_end, FLAGS.t_len, dtype=torch.float)[1:].cuda()
+            queries = torch.linspace(FLAGS.t_start, FLAGS.t_end, FLAGS.t_len, dtype=torch.float)[1:].to(device)
             output = model.number_test_output(test_samples, queries)
             
             # Get batch error mean and std
@@ -940,6 +945,7 @@ def run_extrap():
         wandb_run = None
     
     model = models_text_output.ModelWrapper(model_config)
+    model.to(device)
     trainer = Trainer(model, model_config, opt_config, trainable_mode=FLAGS.trainable_mode, t_start=FLAGS.t_start, t_end=FLAGS.t_end, t_len=FLAGS.t_len, amp=FLAGS.amp)
     test_looper = InfiniteDataLooper(test_loader)
 
@@ -952,20 +958,20 @@ def run_extrap():
     test_samples = next(test_looper)
 
     #get queries and current output
-    queries = torch.linspace(FLAGS.t_start, FLAGS.t_end, FLAGS.t_len, dtype=torch.float)[1:].cuda()
+    queries = torch.linspace(FLAGS.t_start, FLAGS.t_end, FLAGS.t_len, dtype=torch.float)[1:].to(device)
     output = model.number_test_output(test_samples, queries)
 
     #generate new input, initial condition is predicted solution at end time.
     test_samples2 = copy.deepcopy(test_samples)
     last_time_sol = output[:, -1:, :]
     print(output.shape[0])
-    initial_time = torch.full((output.shape[0], 1, 1), FLAGS.t_start).cuda()
+    initial_time = torch.full((output.shape[0], 1, 1), FLAGS.t_start).to(device)
     # Concatenate the column with the new intitial time tensor along the last dimension
     expanded_tensor = torch.cat((initial_time, last_time_sol), dim=2)  # Shape: (4, 1, 129)
     # Convert the tensor into a list with b.s. elements, each of size (1, 129)
     new_IC = [expanded_tensor[i] for i in range(expanded_tensor.size(0))]
     test_samples2['data'] = new_IC
-    queries2 = torch.linspace(FLAGS.t_start, FLAGS.t_end, FLAGS.t_len, dtype=torch.float)[1:].cuda()
+    queries2 = torch.linspace(FLAGS.t_start, FLAGS.t_end, FLAGS.t_len, dtype=torch.float)[1:].to(device)
     output2 = model.number_test_output(test_samples2, queries2)
     make_plots_extrapolate(output2, test_samples2, queries2, wandb_run)
 
@@ -1005,7 +1011,7 @@ if __name__ == "__main__":
 
     flags.DEFINE_integer("profile_level", 0, "0: usual training, 1: profile training, 2: profile without loading data")
 
-    flags.DEFINE_string("data_home_folder", "/home/elisa/code/icon-gen/dataset/", "folder for training data")
+    flags.DEFINE_string("data_home_folder", "/Users/divyam/Course/Project Arbeit/MOL-LLM/MOL-LLM/dataset/", "folder for training data")
     flags.DEFINE_string("svd_model_folder", "20240712-171318/299999_params.pth", "folder for saved model for testing")
 
     flags.DEFINE_string("train_data_config", "train_data_config.json", "config file for training")

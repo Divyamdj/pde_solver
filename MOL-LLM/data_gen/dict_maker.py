@@ -14,7 +14,7 @@ from .PDE_solve import Solve_PDE
 
 #Load sentences (without descriptions)
 sentences = []
-sentences_file_name = "/home/elisa/code/icon-gen/src/data_gen/sentences.txt"
+sentences_file_name = "/Users/divyam/Course/Project Arbeit/MOL-LLM/MOL-LLM/data_gen/sentences.txt"
 with open(sentences_file_name, "r") as file:
     sentences = [line.strip() for line in file]
 
@@ -22,7 +22,7 @@ with open(sentences_file_name, "r") as file:
 description_dict = {}
 for i in range(len(sentences)):
     description_i = []
-    descript_file_name = f"/home/elisa/code/icon-gen/src/data_gen/descriptions/description_{i}.txt"
+    descript_file_name = f"/Users/divyam/Course/Project Arbeit/MOL-LLM/MOL-LLM/data_gen/descriptions/description_{i}.txt"
     with open(descript_file_name, "r") as file:
         description_i = [line.strip() for line in file]
     description_dict[i] = description_i

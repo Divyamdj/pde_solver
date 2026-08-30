@@ -1,5 +1,5 @@
 {
-    "folder": "Extrap_ODEs/",
+    "folder": "Paper_datasets/Extrap_ODEs/",
     "text_filename": "train_text.prefix",
     "data_filename": "train_data.h5",
     "env_base_seed": 40,

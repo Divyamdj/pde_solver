@@ -13,7 +13,7 @@ from data_gen.preprocess import (
     batch_inputs,
     batch_indices,
 )
-
+device = torch.device("cpu")
 
 # from models_gpt2_reproduce_mask import ReproduceGPT2
 

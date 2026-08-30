@@ -1,16 +1,16 @@
 GPU=1
 
 ###Generate training data
-# CUDA_VISIBLE_DEVICES=$GPU python main.py --data_home_folder /home/elisa/code/icon-gen/Paper_datasets/ \
-# --sentence_ids 5,6 --train_batch_size 1 --t_len 64 --IC_per_eq 50 --t_end 5 --IC_types "train" \
-# --dataset_workers 1 --epochs 1 --steps_per_epoch 10000 \
-# --export_data --export_data_type train --seed 107 &&
+CUDA_VISIBLE_DEVICES=$GPU python main.py --data_home_folder "/Users/divyam/Course/Project Arbeit/MOL-LLM/MOL-LLM/Paper_datasets/" \
+--sentence_ids 5,6 --train_batch_size 1 --t_len 128 --IC_per_eq 50 --t_end 5 --IC_types "train" \
+--dataset_workers 0 --epochs 1 --steps_per_epoch 10000 \
+--export_data --export_data_type train --seed 107 &&
 
 ###Generate test data
-CUDA_VISIBLE_DEVICES=$GPU python main.py --data_home_folder /home/elisa/code/icon-gen/Extrap_data/ \
---sentence_ids 12,18,23,28,29 --train_batch_size 1 --t_len 128  --IC_per_eq 1 --t_end 10 --IC_types "train" \
---dataset_workers 1 --epochs 1 --steps_per_epoch 50 \
---export_data --export_data_type test -seed 44 &&
+# CUDA_VISIBLE_DEVICES=$GPU python3 main.py --data_home_folder "/Users/divyam/Course/Project Arbeit/MOL-LLM/MOL-LLM/Extrap_data/" \
+# --sentence_ids 12,18,23,28,29 --train_batch_size 1 --t_len 128  --IC_per_eq 1 --t_end 10 --IC_types "train" \
+# --dataset_workers 0 --epochs 1 --steps_per_epoch 50 \
+# --export_data --export_data_type test -seed 44 &&
 
 echo "Done"
 

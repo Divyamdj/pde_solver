@@ -1,5 +1,5 @@
 {
-    "folder": "NewExtr/",
+    "folder": "Extrap_data/NewExtr/",
     "text_filename": "val_text.prefix",
     "data_filename": "val_data.h5",
     "env_base_seed": 43,

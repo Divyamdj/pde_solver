@@ -1,0 +1,122 @@
+Ground Truth: The viscous conservation law with sine flux models smooth fluid motion starting from sinusoidal waves, avoiding shocks.
+Generated text: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ground Truth: The viscous conservation law with sine flux models fluid dynamics initiated by sinusoidal waves, ensuring no shock formation.
+Generated text: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ground Truth: The equation of quadratic diffusion governs diffusion dynamics combined with a quadratic reaction function.
+Generated text:  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Ground Truth: u_t = c1 * u_xx is a parabolic PDE that models the spread of heat in a material over time.
+Generated text:  at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at
+Ground Truth: The equation of quadratic diffusion governs the spread of quantities with diffusion and quadratic reaction characteristics.
+Generated text: ceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptceptcept
+Ground Truth: Numerical solutions to the heat equation u_t = c1 * u_xx can be obtained using implicit schemes, providing stability for larger time steps.
+Generated text:  at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at
+Ground Truth: The inviscid conservation law with cubic flux governs fluid dynamics initiated by sinusoidal waves, avoiding shocks entirely.
+Generated text: -in-in-in-in-in-in-in-in-in-in-in-in-in-in-in-in-in-in-in-in-in-in-in-in-in
+Ground Truth: To solve the heat equation u_t = c1 * u_xx, the backward Euler method can be used, providing an unconditionally stable numerical solution.
+Generated text:  ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear ear
+Ground Truth: The equation of advection governs the transport of scalar fields, driven by the velocity of the medium.
+Generated text:  ear earearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearearear
+Ground Truth: The viscous conservation law with sine flux ensures fluid dynamics initiated by sinusoidal waves remain shock-free.
+Generated text: ¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+Ground Truth: The finite volume method can be used to solve the heat equation u_t = c1 * u_xx, ensuring conservation of heat energy across the grid.
+Generated text:  at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at at
